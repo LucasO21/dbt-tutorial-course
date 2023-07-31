@@ -44,3 +44,4 @@ FROM source
 WHERE created_at > (SELECT MAX(created_at) FROM {{ this }})
 
 {% endif %}
+
